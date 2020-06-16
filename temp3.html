@@ -100,37 +100,37 @@
             doc.setFontType("bold");
             doc.setFontSize(16);
             doc.setTextColor(131, 111, 255);
-            doc.text(10, 184, "Experience/Projects");
+            doc.text(10, 186, "Experience/Projects");
 
             doc.setTextColor(47, 79, 79);
             doc.setFontType("normal");
             doc.setFontSize(12);
             var ob3 = doc.splitTextToSize(document.getElementById("expert").value, 190);
-            doc.text(ob3, 10, 190);
+            doc.text(ob3, 10, 192);
             // doc.text(10, 196, document.getElementById("expert").value);
 
             doc.setFontType("bold");
             doc.setFontSize(16);
             doc.setTextColor(131, 111, 255);
-            doc.text(10, 235, "Hobbies/Area of Interest");
+            doc.text(10, 237, "Hobbies/Area of Interest");
 
             doc.setTextColor(47, 79, 79);
             doc.setFontType("normal");
             doc.setFontSize(12);
             var ob4 = doc.splitTextToSize(document.getElementById("aoi").value, 190);
-            doc.text(ob4, 10, 241);
+            doc.text(ob4, 10, 243);
             // doc.text(10, 226, document.getElementById("aoi").value);
 
             doc.setFontType("bold");
             doc.setFontSize(16);
             doc.setTextColor(131, 111, 255);
-            doc.text(10, 265, "Certifications");
+            doc.text(10, 267, "Certifications");
 
             doc.setTextColor(47, 79, 79);
             doc.setFontType("normal");
             doc.setFontSize(12);
             var ob5 = doc.splitTextToSize(document.getElementById("cer").value, 190);
-            doc.text(ob5, 10, 271);
+            doc.text(ob5, 10, 273);
             // doc.text(10, 256, document.getElementById("cer").value);
 
             doc.save("Resume.pdf");
