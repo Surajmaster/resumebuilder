@@ -22,24 +22,24 @@
 
             var myimg = 'data:image/png;base64,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';
             doc.addImage(myimg, 'JPEG', 3.2, 30, 10, 5);
-            
+
             // adding photo
             // var preview = document.querySelector('img');
             // var file = document.querySelector('input[type=file]').files[0];
             // // doc.addImage(file, 'JPEG' , 60,40,20,20);
-			// var reader = new FileReader();
+            // var reader = new FileReader();
 
-			// reader.onloadend = function () {
-			// 	preview.src = reader.result;
+            // reader.onloadend = function () {
+            // 	preview.src = reader.result;
 
-			// }
-
-			// if (file) {
-			// 	reader.readAsDataURL(file);
-			// } else {
-			// 	preview.src = "Image/img3.jpg";
             // }
-            
+
+            // if (file) {
+            // 	reader.readAsDataURL(file);
+            // } else {
+            // 	preview.src = "Image/img3.jpg";
+            // }
+
             //var image = new Image();
             // image.src = 'images/resume.jpg';
             // image.src = doc.addImage(document.getElementById("photo").value);
@@ -171,7 +171,7 @@
                     <a class="nav-link" href="/index.html">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/temp.html">Generate my Resume</a>
+                    <a class="nav-link" href="/temp.html">Templates</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
@@ -200,7 +200,7 @@
                     </div> -->
                     <div class="form-group">
                         <label for="username">Name</label>
-                        <input type="text" class="form-control" id="username" placeholder="Your Name">
+                        <input type="text" class="form-control" id="username" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
                         <label for="current">Current Position</label>
@@ -208,7 +208,7 @@
                     </div>
                     <div class="form-group">
                         <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email">
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email" required>
                     </div>
 
                     <div class="form-group">
@@ -218,13 +218,14 @@
 
                     <div class="form-group">
                         <label for="inputAddress">Address</label>
-                        <textarea cols="89" rows="5" class="form-control" id="address"
-                            placeholder="Your Address"></textarea>
+                        <textarea cols="89" rows="5" class="form-control" id="address" placeholder="Your Address"
+                            required></textarea>
                     </div>
 
                     <div class="form-group">
                         <label for="inputcontact">Contact no.</label>
-                        <input type="email" class="form-control" id="inputcontact" placeholder="Your Phone no.">
+                        <input type="email" class="form-control" id="inputcontact" placeholder="Your Phone no."
+                            required>
                     </div>
 
                     <div class="form-group">
@@ -245,30 +246,39 @@
                             <col width="170">
                             <tr>
                                 <td>Graduation</td>
-                                <td><input type="text" class="table_input" id="year1" placeholder="Enter Passing Year">
+                                <td><input type="text" class="table_input" id="year1" placeholder="Enter Passing Year"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input1" id="bu1" placeholder="Enter B/U Number">
+                                <td><input type="text" class="table_input1" id="bu1" placeholder="Enter B/U Number"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input" id="per1" placeholder="Enter percentage">
+                                <td><input type="text" class="table_input" id="per1" placeholder="Enter percentage"
+                                        required>
                                 </td>
                             </tr>
                             <tr>
                                 <td>12<sup>th</sup></td>
-                                <td><input type="text" class="table_input" id="year2" placeholder="Enter Passing Year">
+                                <td><input type="text" class="table_input" id="year2" placeholder="Enter Passing Year"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input1" id="bu2" placeholder="Enter B/U Number">
+                                <td><input type="text" class="table_input1" id="bu2" placeholder="Enter B/U Number"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input" id="per2" placeholder="Enter percentage">
+                                <td><input type="text" class="table_input" id="per2" placeholder="Enter percentage"
+                                        required>
                                 </td>
                             </tr>
                             <col width="180">
                             <tr>
                                 <td>10<sup>th</sup></td>
-                                <td><input type="text" class="table_input" id="year3" placeholder="Enter Passing Year">
+                                <td><input type="text" class="table_input" id="year3" placeholder="Enter Passing Year"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input1" id="bu3" placeholder="Enter B/U Number">
+                                <td><input type="text" class="table_input1" id="bu3" placeholder="Enter B/U Number"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input" id="per3" placeholder="Enter percentage">
+                                <td><input type="text" class="table_input" id="per3" placeholder="Enter percentage"
+                                        required>
                                 </td>
                             </tr>
 
@@ -282,19 +292,20 @@
                     </div>
                     <hr>
                     <h2 style="color: rgb(85, 85, 165);">Experience/Projects</h2>
-                    <textarea id="expert" cols="100" rows="5" class="form-control"></textarea>
+                    <textarea id="expert" cols="100" rows="5" class="form-control" required></textarea>
                     <hr>
                     <h2 style="color: rgb(85, 85, 165);">Technical Skill</h2>
-                    <textarea id="skill" cols="100" rows="5" class="form-control"></textarea>
+                    <textarea id="skill" cols="100" rows="5" class="form-control" required></textarea>
                     <hr>
 
                     <h2 style="color: rgb(85, 85, 165);">Software</h2>
-                    <textarea id="soft" cols="100" rows="5" class="form-control"></textarea><br>
+                    <textarea id="soft" cols="100" rows="5" class="form-control" required></textarea><br>
 
 
                     <div class="d-flex justify-content-center">
-                        <button type="submit" onclick="genpdf()" class="btn btn-primary form-button">Generate your
-                            Resume</button>
+                        <button type="submit" onclick="genpdf()" class="btn btn-primary form-button">Generate
+                                your
+                                Resume</button>
                     </div><br>
                     <!-- </form><br> -->
                 </div>
