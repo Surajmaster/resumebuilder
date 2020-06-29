@@ -12,8 +12,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
+    <!-- jQuery code -->
+    <!-- <script>
+        
+        $(document).ready(function(){
+            $(".btn2").click(function () {
+                $("ol").append('<li><input type="text" class="form-control"</li>');
+            });
+        })
+    </script> -->
 
     <script>
+
         // var rowcount = 3;
         // function myCreatefun() {
         //     var Class = prompt("Enter your class ");
@@ -60,7 +70,7 @@
             doc.setFontSize(10);
             doc.text(160, 22, "+91-" + document.getElementById("inputcontact").value, 'center');
             doc.text(160, 28, document.getElementById("inputEmail4").value, 'center');
-            doc.text(160, 34, document.getElementById("inputLinkedin").value,'center');
+            doc.text(160, 34, document.getElementById("inputLinkedin").value, 'center');
             // doc.text(120, 42, "Address : " + document.getElementById("address").value);
             doc.text(10, 45, "_________________________________________________________________________________________________");
 
@@ -131,13 +141,48 @@
             doc.text(10, 288, "_________________________________________________________________________________");
 
             doc.save("Resume.pdf");
+            // $(document).ready(function () {
+            // $(".btn1").click(function () {
+            //     $("ol").append('<li><input type="text" class="form-control"</li>');
+            // });
+            // });
         }
     </script>
 
 </head>
 
 <body class="b2">
+
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #c3dbec8c;">
+        <a class="navbar-brand" href="/">Resume-Generator</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="temp.html">Templates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Generate resume</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+
+
+
+    <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #c3dbec8c;">
         <a class="navbar-brand" href="/">Resume-Generator</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -161,7 +206,7 @@
                 </li>
             </ul>
         </div>
-    </nav><br><br>
+    </nav><br><br> -->
 
     <section class="resume1" id="resumeid">
         <div class="container headings text-center my-4">
@@ -189,18 +234,19 @@
 
                     <div class="form-group">
                         <label for="inputAddress">Address</label>
-                        <textarea cols="89" rows="5" class="form-control" id="address"
-                            placeholder="Your Address" required></textarea>
+                        <textarea cols="89" rows="5" class="form-control" id="address" placeholder="Your Address"
+                            required></textarea>
                     </div>
 
                     <div class="form-group">
                         <label for="inputcontact">Contact no.</label>
-                        <input type="email" class="form-control" id="inputcontact" placeholder="Your Phone no." required>
+                        <input type="email" class="form-control" id="inputcontact" placeholder="Your Phone no."
+                            required>
                     </div>
 
                     <div class="form-group">
                         <label for="inputobj">Objective</label>
-                        <textarea rows="5" id="object" class="form-control"></textarea>
+                        <textarea rows="3" id="object" class="form-control"></textarea>
                     </div>
 
                     <div class="qualification">
@@ -216,30 +262,39 @@
                             <col width="170">
                             <tr>
                                 <td>Graduation</td>
-                                <td><input type="text" class="table_input" id="year1" placeholder="Enter Passing Year" required>
+                                <td><input type="text" class="table_input" id="year1" placeholder="Enter Passing Year"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input1" id="bu1" placeholder="Enter B/U Number" required>
+                                <td><input type="text" class="table_input1" id="bu1" placeholder="Enter B/U Number"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input" id="per1" placeholder="Enter percentage" required>
+                                <td><input type="text" class="table_input" id="per1" placeholder="Enter percentage"
+                                        required>
                                 </td>
                             </tr>
                             <tr>
                                 <td>12<sup>th</sup></td>
-                                <td><input type="text" class="table_input" id="year2" placeholder="Enter Passing Year" required>
+                                <td><input type="text" class="table_input" id="year2" placeholder="Enter Passing Year"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input1" id="bu2" placeholder="Enter B/U Number" required>
+                                <td><input type="text" class="table_input1" id="bu2" placeholder="Enter B/U Number"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input" id="per2" placeholder="Enter percentage" required>
+                                <td><input type="text" class="table_input" id="per2" placeholder="Enter percentage"
+                                        required>
                                 </td>
                             </tr>
                             <col width="180">
                             <tr>
                                 <td>10<sup>th</sup></td>
-                                <td><input type="text" class="table_input" id="year3" placeholder="Enter Passing Year" required>
+                                <td><input type="text" class="table_input" id="year3" placeholder="Enter Passing Year"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input1" id="bu3" placeholder="Enter B/U Number" required>
+                                <td><input type="text" class="table_input1" id="bu3" placeholder="Enter B/U Number"
+                                        required>
                                 </td>
-                                <td><input type="text" class="table_input" id="per3" placeholder="Enter percentage" required>
+                                <td><input type="text" class="table_input" id="per3" placeholder="Enter percentage"
+                                        required>
                                 </td>
                             </tr>
 
@@ -255,13 +310,36 @@
                     <h2 style="color: rgb(85, 85, 165);">Experience/Projects</h2>
                     <textarea id="expert" cols="100" rows="5" class="form-control" required></textarea>
                     <hr>
-                    <h2 style="color: rgb(85, 85, 165);">Technical Skill</h2>
+                    <h2 style="color: rgb(85, 85, 165);">Technical Skill</h2> -->
                     <textarea id="skill" cols="100" rows="5" class="form-control" required></textarea>
                     <hr>
+
+                    <!-- <h2 style="color: rgb(85, 85, 165);">Technical Skill</h2> -->
+                    <!-- <ol>
+                        <li><input type="text" class="form-control" id="firstskill">
+                        </li>
+                        <li><input type="text" class="form-control" id="secondskill"></li>
+                        <li><input type="text" class="form-control" id="thirdskill"></li>
+                        <li><input type="text" class="form-control" id="fourthskill"></li>
+
+                    </ol> -->
+                    <!-- <div style="padding-left: 200px;" class="justify-content-center">
+                        <button class="btn-success form-button btn1">Add a new skill</button><br><br>
+                    </div> -->
+
 
                     <h2 style="color: rgb(85, 85, 165);">Hobbies/Area of Interest</h2>
                     <textarea id="aoi" cols="100" rows="5" class="form-control" required></textarea><br>
 
+                    <!-- <h2 style="color: rgb(85, 85, 165);">Hobbies/Area of Interest</h2>
+                    <ol>
+                        <li><input type="text" class="form-control" id=""></li>
+                        <li><input type="text" class="form-control" id=""></li>
+                        <li><input type="text" class="form-control" id=""></li>
+                    </ol> -->
+                    <!-- <div style="padding-left: 600px;" class="justify-content-center">
+                        <button class="btn-success form-button btn2">+</button><br><br>
+                    </div> -->
 
                     <div class="d-flex justify-content-center">
                         <button type="submit" onclick="genpdf()" class="btn btn-primary form-button">Generate your
